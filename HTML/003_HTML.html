@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML 学习笔记 003</title>
+</head>
+<body>
+	
+	<h3>表单 - 输入元素:</h3>
+	<hr>
+
+	<!-- Text Fields -->
+	<form action="">
+		
+		<label>普通输入框:</label>
+		<input type="text" placeholder="这是一个普通输入框"> 
+		<br>
+
+		<label>密码输入框:</label>
+		<input type="password" placeholder="这是一个密码输入框">
+		<br>
+	
+		<label for="radio">单选按钮:</label>  <!-- 此处的 for 为什么添加的label(标签)，可选 -->
+		<input type="radio" name="sex" value="male" checked="checked">Male  <!-- checked : 可以让用户选择的控件，都有一个默认的属性，此处默认选中 Male -->
+		<input type="radio" name="sex" value="female">Female
+		
+		<br>
+		<label for="checkbox">复选框：</label>  
+		<input type="checkbox" name="checkboxtest" value="value0" checked="checked">选项一
+		<input type="checkbox" name="checkboxtest" value="value1">选项二
+			
+		<br>
+		<label>提交按钮：</label>	
+		<input type="submit" value="提交按钮">
+
+		<br>
+		<label>普通按钮：</label>
+		<input type="button" value="普通按钮">
+
+		<br>
+		<label>下拉选择框</label>
+		<select name="XXX" id="XXX">
+			<option value="value0">选项一</option>
+			<option value="value1" selected="selected">选项二</option>  <!-- 该选项将会默认选中，selected 参数可以传空，即等同于这句：<option value="value1" selected>选项二</option>   -->
+			<option value="value2">选项三</option>
+		</select>
+	</form>
+
+
+</body>
+</html>
+
+
+
+
+
+<!--  表单 - 输入元素：
+
+	form 标签，定义供用户输入的表单
+
+	一、input标签，定义输入域，多数情况下，被用到的输入标签都是 input 定义的,格式如下：
+				
+		<input type="xxx">描述
+
+		type 控制输入类型，包括:
+			①，text       : 文本域（Text Fields), placeholder 属性代表默认站位背景文字；
+			②，password   : 密码字段
+			③，radio      : 单选按钮（Radio Buttons）；
+			④，checkbox   : 复选框（Radio Buttons）,用户需要从若干给定的选择中选取一个或若干选项；
+			⑤，submit     : 定义了提交按钮(Submit Button);当用户单击确认按钮时，表单的内容会被传送到另一个文件。
+			⑥，button     : 创建一个按钮；
+			
+	二、textarea 标签，定义一个可编辑的文本框，且框的大小可变动，格式如下：
+				
+		<textarea rows="10" cols="30">我是一个文本框。</textarea>
+			
+		其中，rows,代表最小行数，cols代表最小列数；用户拖动大小的最小值；
+
+	三、select 标签，定义一个可下拉选择的框，使用 optgroup 来定义选项组，使用 option 来定义各个选项，格式如下：
+				
+		<select name="xxx" id="xxx">
+			<option value="value0">value0</option>
+			<option value="value1 selected">value1</option>  
+			<option value="value1">value2</option>
+		</select>
+
+		其中 selected 标记处当前默认选项；
+-->
+	

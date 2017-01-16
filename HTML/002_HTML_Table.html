@@ -1,0 +1,181 @@
+<!-- HTML笔记 本章讲解内容：
+	表格
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML 学习笔记 002</title>
+</head>
+<body>
+	
+	<pre>   <!-- pre 标签会根据空格和换行严格排版 -->
+
+HTML 表格：
+	table       : 标签定义 html 表格，
+	border      : 边宽；默认为0；
+	caption     : 定义表格的标题
+	tr          : 定义表格的行
+	td          : 定义表格单元，左对齐显示；
+	th          : 定义表格的表头，居中显示；
+	cellpadding : 表格内边距；
+	cellspacing : 表格外边距，默认大概2px;
+	colspan     : 合并单元格；
+
+	</pre>
+	<hr>
+	
+	<!-- 标题显示方式： -->
+	<h4 style="color: blue">标题显示方式：</h4>
+	<table border="1px" cellpadding="10" cellspacing="0">
+		<caption style="color: blue">水平标题</caption>
+		<tr>
+			<td>Name:</td>
+			<td>Age:</td>
+			<td>Phone:</td>
+		</tr>
+		<tr>
+			<td>CeeYang</td>
+			<td>23</td>
+			<td>18888888888</td>
+		</tr>
+	</table>
+	<br>
+
+
+	<table border="1">
+		<caption style="color: blue">垂直标题</caption>
+		<tr>
+			<td>Name:</td>
+			<td>CeeYang</td>
+		</tr>
+		<tr>
+			<td>Age:</td>
+			<td>23</td>
+		</tr>
+		<tr>
+			<td>Phone:</td>
+			<td>18888888888</td>
+		</tr>
+	</table>
+	<br>
+	<hr>
+	
+
+	<!-- 对齐方式: -->
+	<h4 style="color: green">对齐方式:</h4>
+	<table border="1">
+		<caption style="color: green">使用 th 居中显示</caption>
+		<tr>
+			<th>Name:</th>
+			<th>CeeYang</th>
+		</tr>
+		<tr>
+			<th>Age:</th>
+			<th>23</th>
+		</tr>
+		<tr>
+			<th>Phone:</th>
+			<th>18888888888</th>
+		</tr>
+	</table>
+	<br>
+	
+
+	<table border="1">
+		<caption style="color: green">使用 td 左对齐显示</caption>
+		<tr>
+			<td>Name:</td>
+			<td>CeeYang</td>
+		</tr>
+		<tr>
+			<td>Age:</td>
+			<td>23</td>
+		</tr>
+		<tr>
+			<td>Phone:</td>
+			<td>18888888888</td>
+		</tr>
+	</table>
+	<br>
+	<hr>
+
+
+	<!-- 合并单元格 -->
+	<h4 style="color: red">使用 colspan 合并单元格:</h4>
+	<table border="1">
+		<caption style="color: red">单元格跨两格:</caption>
+		<tr>
+  			<th>Name</th>
+  			<th colspan="2">Age And Phone:</th>
+		</tr>
+		<tr>
+  			<td>CeeYang</td>
+  			<th>23</th>
+  			<td>18888888888</td>
+		</tr>
+		<tr>
+			<td>CeeYang</td>
+			<td>18888888888</td>
+			<th>23</th>	
+		</tr>
+	</table>
+	<br>
+
+
+	<table border="1">
+		<caption style="color: red">单元格跨两列:</caption>
+		<tr>
+  			<th>Name:</th>
+  			<th>CeeYang</th>
+		</tr>
+		<tr>
+  			<th rowspan="2">Age And Phone:</th>
+  			<th>23</th>
+		</tr>
+		<tr>
+			<td>18888888888</td>
+		</tr>
+		<tr>
+			<th rowspan="2">Age And Phone:</th>
+			<th>18888888888</th>
+		</tr>
+		<tr>
+			<th>23</th>
+		</tr>
+	</table>
+	<br>
+	<hr>
+
+
+	<table border="1">
+  		<thead>
+    		<tr>
+      			<th>Month</th>
+      			<th>Savings</th>
+    		</tr>
+  		</thead>
+  		<tfoot>
+    		<tr>
+      			<td>Sum</td>
+      			<td>$180</td>
+    		</tr>
+  		</tfoot>
+  		<tbody>
+    		<tr>
+      			<td>January</td>
+      			<td>$100</td>
+    		</tr>
+    		<tr>
+      			<td>February</td>
+      			<td>$80</td>
+    		</tr>
+  		</tbody>
+	</table>
+
+
+
+</body>
+</html>
+

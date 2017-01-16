@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>HTML 学习笔记 004</title>
+
+</head>
+<body>
+	
+	
+	<!-- 使用 script 插入一段脚本 -->
+	<script>
+		document.write("Hello world!");
+	</script>
+	<noscript>
+		 抱歉，您的浏览器不支持 JavaScript 脚本
+	</noscript>
+
+
+	<!-- JavaScript可以直接在HTML输出: -->
+	<script>
+		document.write("<p>这是一个段落。</p>");
+	</script>
+	<br>
+	<hr>
+
+	<!-- JavaScript事件响应: -->
+	<h4>JavaScript事件响应:</h4>
+	<p id="demo">测试文字，点击下面的按钮，将会修改文字</p>
+	<script>
+		function myFunction() {
+			document.getElementById("demo").innerHTML="Hello JavaScript!";
+		}
+	</script>
+	<button type="button" onclick="myFunction()">测试按钮</button>
+
+
+</body>
+</html>
